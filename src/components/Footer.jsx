@@ -2,7 +2,7 @@ import { IconFacebook, IconInstagram, IconTikTok, IconTwitter, IconWhatsApp } fr
 
 export function Footer() {
   return (
-    <div className="px-8 border-t pt-6">
+    <div className=" px-8 sm:px-24 border-t pt-6">
       <div className="max-w-6xl mx-auto flex gap-8 flex-wrap justify-between items-center bg-white text-xs">
         <div>
           <p>
@@ -17,7 +17,7 @@ export function Footer() {
         </div>
         <div>
           <h2>Redes sociais:</h2>
-          <div className="flex gap-4 w-12 pt-2">
+          <div className="flex gap-4 pt-2">
             <a href="#">
               <IconInstagram />
             </a>
@@ -33,7 +33,7 @@ export function Footer() {
           </div>
         </div>
       </div>
-      <p className="text-center text-xs">Todos os direitos reservados © 2023</p>
+      <p className="text-center text-xs pt-2 sm:pt-0">Todos os direitos reservados © 2023</p>
     </div>
   );
 }
