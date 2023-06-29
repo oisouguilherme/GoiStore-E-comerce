@@ -42,15 +42,12 @@ export function CompreAqui({
           <p className="pb-2 text-sm sm:text-base">Capacidade disponiveis:</p>
           <div className="flex gap-4 text-sm sm:text-base">
             <p className="border-2 border-black py-2 px-4 rounded-2xl">128GB</p>
-            <p className="border-2 py-2 px-4 rounded-2xl">256GB</p>
           </div>
         </div>
         <div className={hidden}>
           <p className="pb-2 text-sm sm:text-base">Cores disponiveis:</p>
           <div className="flex gap-4 text-sm sm:text-base">
             <p className="border-2 border-black py-2 px-4 rounded-2xl">{cor}</p>
-            <p className="border-2 py-2 px-4 rounded-2xl">Preto</p>
-            <p className="border-2 py-2 px-4 rounded-2xl">Azul</p>
           </div>
         </div>
 

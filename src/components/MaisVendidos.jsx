@@ -3,7 +3,7 @@ import ImageIphone from "../assets/tel.jpg";
 
 export function MaisVendidos() {
   return (
-    <div className=" mt-12 bg-gradient-to-b md:bg-gradient-to-r from-black to-gray-100 max-w-6xl mx-auto rounded-xl flex flex-col md:flex-row ">
+    <section id="maisvendidos" className=" mt-12 bg-gradient-to-b md:bg-gradient-to-r from-black to-gray-100 max-w-6xl mx-auto rounded-xl flex flex-col md:flex-row ">
       <div className="text-white md:w-96 p-8 space-y-4 flex items-center md:items-start flex-col">
         <h2 className="text-2xl">Os produtos mais vendidos da sua coleção</h2>
         <p className="text-sm">
@@ -42,6 +42,6 @@ export function MaisVendidos() {
           precoDividido={"516,74"}
         />
       </div>
-    </div>
+    </section>
   );
 }

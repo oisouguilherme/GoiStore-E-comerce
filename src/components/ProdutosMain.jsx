@@ -3,7 +3,7 @@ import ImageIphone from "../assets/tel.jpg";
 
 export function ProdutosMain() {
   return (
-    <div>
+    <section id="nossosprodutos">
       <div className="px-8">
         <div className="max-w-6xl mx-auto py-12 space-y-12">
           <div className="flex justify-between">
@@ -79,6 +79,6 @@ export function ProdutosMain() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
