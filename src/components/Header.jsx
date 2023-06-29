@@ -39,13 +39,21 @@ export default function Header() {
                 <Link href="/">Página Inicial</Link>
               </li>
               <li className="cursor-pointer text-white duration-300">
-                Sobre Nós
+                <Link href="/sobre">Sobre Nós</Link>
               </li>
               <li className="cursor-pointer text-white duration-300">
-                <LinkScrol onClick={toggleMenu} smooth={true} to="maisvendidos">Mais Vendidos</LinkScrol>
+                <LinkScrol onClick={toggleMenu} smooth={true} to="maisvendidos">
+                  Mais Vendidos
+                </LinkScrol>
               </li>
               <li className="cursor-pointer text-white duration-300">
-                <LinkScrol onClick={toggleMenu} smooth={true} to="nossosprodutos">Nossos Produtos</LinkScrol>
+                <LinkScrol
+                  onClick={toggleMenu}
+                  smooth={true}
+                  to="nossosprodutos"
+                >
+                  Nossos Produtos
+                </LinkScrol>
               </li>
             </ul>
           </div>
@@ -53,14 +61,20 @@ export default function Header() {
         <div className="hidden lg:block">
           <ul className="flex space-x-12 font-medium text-center items-center text-lg">
             <li className="cursor-pointer duration-300">
-              <Link href="https://zunicseguros.com.br/">Página Inicial</Link>
-            </li>
-            <li className="cursor-pointer duration-300">Sobre Nós</li>
-            <li className="cursor-pointer duration-300">
-              <LinkScrol smooth={true} to="maisvendidos">Mais Vendidos</LinkScrol>
+              <Link href="/">Página Inicial</Link>
             </li>
             <li className="cursor-pointer duration-300">
-              <LinkScrol smooth={true} to="nossosprodutos">Nossos Produtos</LinkScrol>
+              <Link href="/sobre">Sobre Nós</Link>
+            </li>
+            <li className="cursor-pointer duration-300">
+              <LinkScrol smooth={true} to="maisvendidos">
+                Mais Vendidos
+              </LinkScrol>
+            </li>
+            <li className="cursor-pointer duration-300">
+              <LinkScrol smooth={true} to="nossosprodutos">
+                Nossos Produtos
+              </LinkScrol>
             </li>
           </ul>
         </div>
