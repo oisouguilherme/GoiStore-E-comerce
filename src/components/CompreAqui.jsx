@@ -66,8 +66,8 @@ export function CompreAqui({
             <p className="pb-2">Em até 12x de R$ {precoDividido}</p>
           </div>
         </div>
-        <a
-          href="#"
+        <a target="_blank"
+          href="https://wa.me/5538998078611?text=Seja+bem+vindo+a+GoiStore%21+Digite+aqui+o+seu+Produto+de+Interesse%3A++"
           className="bg-[#ee6c09] hover:bg-opacity-90 duration-200 text-white text-xl font-bold text-center rounded-xl py-3"
         >
           Compra agora

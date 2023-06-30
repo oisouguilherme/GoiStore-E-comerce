@@ -1,7 +1,7 @@
 export function ButtonWhatsApp() {
   return (
     <div className="fixed bottom-4 right-4 text-white bg-green-500 rounded-full">
-      <a href="#">
+      <a href="https://api.whatsapp.com/send/?phone=5538998078611&text=Seja+bem+vindo+a+GoiStore%21+Digite+aqui+o+seu+Produto+de+Interesse%3A++&type=phone_number&app_absent=0" target="_blank">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="40"

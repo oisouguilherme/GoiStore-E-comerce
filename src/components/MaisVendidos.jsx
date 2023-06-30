@@ -1,5 +1,6 @@
 import { CardProduto } from "./CardProduto";
 import ImageIphone from "../assets/tel.jpg";
+import { Link } from "react-scroll";
 
 export function MaisVendidos() {
   return (
@@ -9,12 +10,12 @@ export function MaisVendidos() {
         <p className="text-sm">
           Lorem ipsum, dolor sit amet consectetur adipisicing.
         </p>
-        <a
-          href="#"
-          className="bg-white hover:scale-105 duration-300 px-8 py-2 rounded-md font-bold text-sm text-center text-black"
+        <Link
+          to="nossosprodutos" smooth={true}
+          className="bg-white hover:scale-105 duration-300 px-8 py-2 rounded-md font-bold text-sm text-center text-black cursor-pointer"
         >
           Ver mais produtos
-        </a>
+        </Link>
       </div>
       <div className="flex flex-wrap p-4 justify-center gap-4 w-full">
         <CardProduto

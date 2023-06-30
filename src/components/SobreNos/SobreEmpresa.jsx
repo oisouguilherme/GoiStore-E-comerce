@@ -1,8 +1,13 @@
 import Image from "next/image";
 import ImageBanner from "../../assets/banner.png";
+import Link from "next/link";
+import Head from "next/head";
 export function SobreEmpresa() {
   return (
     <div>
+      <Head>
+        <title>Sobre Nós - GoiStore</title>
+      </Head>
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 items-center gap-8 py-12 px-2">
         <div className="sm:text-lg space-y-4 text-center">
           <h2 className="text-2xl sm:text-4xl font-bold">
@@ -25,14 +30,15 @@ export function SobreEmpresa() {
             Consequatur, eaque. Magnam, placeat.
           </p>
           <div className="flex gap-4 flex-wrap justify-center">
-            <a
-              href="#"
+            <Link
+              href="/"
               className="border-2 border-[#ee6c09] hover:bg-[#ee6c09] hover:text-white duration-300 text-[#ee6c09] px-6 py-1 font-medium rounded-xl"
             >
               VOLTAR A LOJA
-            </a>
+            </Link>
             <a
-              href="#"
+              target="_blank"
+              href="https://wa.me/5538998078611"
               className="border-2 bg-[#ee6c09] hover:bg-white hover:text-[#ee6c09] duration-300 border-[#ee6c09] text-white px-6 py-1 font-medium rounded-xl"
             >
               FALE CONOSCO

@@ -11,9 +11,13 @@ import { Beneficios } from "@/components/Beneficios";
 import { CompreAqui } from "@/components/CompreAqui";
 import { ButtonWhatsApp } from "@/components/ButtonWhatsApp";
 import ImagePhone from "../assets/tel.jpg";
+import Head from "next/head";
 export default function Home() {
   return (
     <>
+      <Head>
+        <title>GoiStore - A Teconologia Move o Mundo</title>
+      </Head>
       <Header />
       <Banner />
       <div className="bg-gradient-to-t from-white to-black">
