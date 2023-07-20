@@ -8,7 +8,7 @@ export function ProdutosMain() {
         <div className="max-w-6xl mx-auto py-12 space-y-12">
           <div className="flex justify-between">
             <h2 className="text-xl sm:text-2xl font-medium pb-1 border-b-4 border-[#ff6500]">
-              CELULARES
+              Nossos Produtos
             </h2>
           </div>
           <div className="flex gap-10 flex-wrap justify-center">

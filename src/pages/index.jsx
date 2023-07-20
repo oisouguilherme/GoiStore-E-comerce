@@ -2,7 +2,6 @@ import { Banner } from "@/components/Banner";
 import Header from "@/components/Header";
 import { OfertasSemana } from "@/components/OfertasSemana";
 import Image from "next/image";
-import Banner2 from "../assets/banner2.jpg";
 import { Category } from "@/components/Category";
 import { MaisVendidos } from "@/components/MaisVendidos";
 import { ProdutosMain } from "@/components/ProdutosMain";
@@ -12,6 +11,7 @@ import { CompreAqui } from "@/components/CompreAqui";
 import { ButtonWhatsApp } from "@/components/ButtonWhatsApp";
 import ImagePhone from "../assets/tel.jpg";
 import Head from "next/head";
+import { IconWhatsApp } from "@/assets/Icons";
 export default function Home() {
   return (
     <>
@@ -20,28 +20,32 @@ export default function Home() {
       </Head>
       <Header />
       <Banner />
-      <div className="bg-gradient-to-t from-white to-black">
-        <OfertasSemana />
-        <Image
-          src={Banner2}
-          alt="banner"
-          className="max-w-6xl w-full mx-auto rounded-2xl relative"
-        />
-        <Category />
-        <CompreAqui
-          celular={"Apple iPhone 14 128GB Roxo"}
-          imagem={ImagePhone}
-          precoAtual={"5.099"}
-          precoTotal={"7.599"}
-          precoDividido={"516,74"}
-          desconto={"33%"}
-          cor={"Roxo"}
-        />
-        <MaisVendidos />
-        <ProdutosMain />
-        <Beneficios />
-        <ButtonWhatsApp />
+      <OfertasSemana />
+      <div className="bg-[url('/banner2.jpg')] bg-cover max-w-6xl mx-auto rounded-lg overflow-hidden">
+        <div className="bg-black bg-opacity-70 h-96 flex flex-col gap-8 justify-center items-center">
+          <h2 className="text-[#ee6c09] font-bold text-3xl sm:text-4xl text-center max-w-xl px-2">
+            Transforme seu mundo com a inovação dos iPhones <br />{" "}
+            <span className="text-white">A revolução na palma da sua mão!</span>
+          </h2>
+          <a href="#" className="flex gap-2 items-center justify-center bg-[#ee6c09] px-20 py-3 text-white font-medium uppercase rounded-lg hover:scale-105 duration-300">
+            <IconWhatsApp /> WhatsApp
+          </a>
+        </div>
       </div>
+      <Category />
+      <CompreAqui
+        celular={"Apple iPhone 14 128GB Roxo"}
+        imagem={ImagePhone}
+        precoAtual={"5.099"}
+        precoTotal={"7.599"}
+        precoDividido={"516,74"}
+        desconto={"33%"}
+        cor={"Roxo"}
+      />
+      <MaisVendidos />
+      <ProdutosMain />
+      <Beneficios />
+      <ButtonWhatsApp />
       <Footer />
     </>
   );

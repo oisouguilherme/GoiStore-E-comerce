@@ -4,17 +4,23 @@ import { Link } from "react-scroll";
 
 export function MaisVendidos() {
   return (
-    <section id="maisvendidos" className=" mt-12 bg-gradient-to-b md:bg-gradient-to-r from-black to-gray-100 max-w-6xl mx-auto rounded-xl flex flex-col md:flex-row ">
+    <section
+      id="maisvendidos"
+      className=" mt-12 bg-gradient-to-b md:bg-gradient-to-r from-black to-gray-100 max-w-6xl mx-auto rounded-xl flex flex-col md:flex-row "
+    >
       <div className="text-white md:w-96 p-8 space-y-4 flex items-center md:items-start flex-col">
         <h2 className="text-2xl">Os produtos mais vendidos da sua coleção</h2>
         <p className="text-sm">
-          Lorem ipsum, dolor sit amet consectetur adipisicing.
+          <span className="text-[#ee6c09] font-medium">Top Vendas!</span><br />
+          Os queridinhos da coleção, prontos para você levar. Não
+          perca! Estoque limitado.
         </p>
         <Link
-          to="nossosprodutos" smooth={true}
-          className="bg-white hover:scale-105 duration-300 px-8 py-2 rounded-md font-bold text-sm text-center text-black cursor-pointer"
+          to="nossosprodutos"
+          smooth={true}
+          className="bg-[#ee6c09] text-white hover:text-black duration-300 px-8 py-2 rounded-md font-bold text-sm text-center cursor-pointer uppercase"
         >
-          Ver mais produtos
+          fale conosco
         </Link>
       </div>
       <div className="flex flex-wrap p-4 justify-center gap-4 w-full">

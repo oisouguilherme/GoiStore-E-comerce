@@ -1,7 +1,7 @@
 export function Beneficios() {
   return (
-    <div className="max-w-6xl mx-auto flex gap-8 flex-wrap justify-between py-12 px-8">
-      <div className="flex items-center gap-4 max-w-xs">
+    <div className="max-w-6xl mx-auto flex items-start gap-8 flex-wrap justify-between py-12 px-8">
+      <div className="flex items-start gap-4 max-w-xs">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
@@ -15,10 +15,10 @@ export function Beneficios() {
         </svg>
         <div>
           <h2 className="font-bold">Compra Segura</h2>
-          <p>Lorem ipsum dolor sit amet.</p>
+          <p>Proteção total para sua compra.</p>
         </div>
       </div>
-      <div className="flex items-center gap-4 max-w-xs">
+      <div className="flex items-start gap-4 max-w-xs">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
@@ -32,10 +32,10 @@ export function Beneficios() {
         </svg>
         <div>
           <h2 className="font-bold">Suporte Profissional</h2>
-          <p>Lorem ipsum dolor sit amet.</p>
+          <p>Equipe especializada ao seu dispor.</p>
         </div>
       </div>
-      <div className="flex items-center gap-4 max-w-xs">
+      <div className="flex items-start gap-4 max-w-xs">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="32"
@@ -49,7 +49,7 @@ export function Beneficios() {
         </svg>
         <div>
           <h2 className="font-bold">Satisfação ou Reembolso</h2>
-          <p>Lorem ipsum dolor sit ameLorem ipsum dolor sit amet.</p>
+          <p>Garantia de satisfação ou seu dinheiro de volta.</p>
         </div>
       </div>
     </div>
