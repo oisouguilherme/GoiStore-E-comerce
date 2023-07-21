@@ -8,7 +8,7 @@ export function SobreMim() {
         <Image src={ImageBanner} alt="Imagem da Loja" />
         <div className="sm:text-lg space-y-4 text-center">
           <h2 className="text-2xl sm:text-4xl font-bold">
-            Lorem ipsum dolor sit amet.
+            Quem Somos
           </h2>
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus

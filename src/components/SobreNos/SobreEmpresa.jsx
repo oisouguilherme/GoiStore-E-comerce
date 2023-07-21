@@ -1,5 +1,5 @@
 import Image from "next/image";
-import ImageBanner from "../../assets/banner.png";
+import ImageEmpresa from "../../assets/sabreEmpresa.png";
 import Link from "next/link";
 import Head from "next/head";
 export function SobreEmpresa() {
@@ -11,23 +11,21 @@ export function SobreEmpresa() {
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 items-center gap-8 py-12 px-2">
         <div className="sm:text-lg space-y-4 text-center">
           <h2 className="text-2xl sm:text-4xl font-bold">
-            Lorem ipsum dolor sit amet.
+            Conheça a Nossa História
           </h2>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus
-            aspernatur debitis quibusdam, cum similique ea voluptas quis eaque
-            dolor, repellat nobis harum itaque perferendis laborum consequuntur
-            officiis adipisci tenetur rerum.
+            Em 2023, nasceu a "GoiStore" com uma visão audaciosa:
+            revolucionar a comunicação e conectividade.
           </p>
           <p className="font-medium">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
-            quo asperiores aliquid fugiat error voluptates.
+            De loja local a operações em várias cidades, nosso crescimento foi
+            impulsionado pela excelência no atendimento ao cliente e produtos
+            inovadores.
           </p>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit
-            accusantium, blanditiis quidem in nobis voluptates possimus nemo
-            amet corrupti aperiam eius, incidunt qui. Atque, laboriosam cum!
-            Consequatur, eaque. Magnam, placeat.
+            Olhando para o futuro, continuamos comprometidos com a inovação e
+            evolução. Com uma equipe talentosa, estamos prontos para liderar o
+            caminho e criar um mundo mais conectado e inteligente.
           </p>
           <div className="flex gap-4 flex-wrap justify-center">
             <Link
@@ -45,7 +43,7 @@ export function SobreEmpresa() {
             </a>
           </div>
         </div>
-        <Image src={ImageBanner} alt="Imagem da Loja" />
+        <Image src={ImageEmpresa} alt="Imagem da Loja" />
       </div>
     </div>
   );
