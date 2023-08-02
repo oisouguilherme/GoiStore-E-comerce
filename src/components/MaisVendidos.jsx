@@ -15,13 +15,12 @@ export function MaisVendidos() {
           Os queridinhos da coleção, prontos para você levar. Não
           perca! Estoque limitado.
         </p>
-        <Link
-          to="nossosprodutos"
-          smooth={true}
+        <a
+          href="https://wa.me/5538998078611?text=Seja+bem+vindo+a+GoiStore%21+Digite+aqui+o+seu+Produto+de+Interesse%3A++" target="_blank"
           className="bg-[#ee6c09] text-white hover:text-black duration-300 px-8 py-2 rounded-md font-bold text-sm text-center cursor-pointer uppercase"
         >
           fale conosco
-        </Link>
+        </a>
       </div>
       <div className="flex flex-wrap p-4 justify-center gap-4 w-full">
         <CardProduto

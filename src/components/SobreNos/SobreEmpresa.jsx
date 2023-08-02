@@ -14,18 +14,13 @@ export function SobreEmpresa() {
             Conheça a Nossa História
           </h2>
           <p>
-            Em 2023, nasceu a "GoiStore" com uma visão audaciosa:
-            revolucionar a comunicação e conectividade.
+            Em 2023, nascia a GoiStore com o firme propósito de revolucionar a experiência de compra de celulares e acessórios. 
           </p>
           <p className="font-medium">
-            De loja local a operações em várias cidades, nosso crescimento foi
-            impulsionado pela excelência no atendimento ao cliente e produtos
-            inovadores.
+            Em pouco tempo, conquistamos uma base sólida de clientes leais e satisfeitos. Através do foco em marcas de renome como Iphone e Xiaomi, nossos clientes encontram em nossa loja uma seleção diversificada de smartphones, atendendo a todas as suas necessidades tecnológicas. 
           </p>
           <p>
-            Olhando para o futuro, continuamos comprometidos com a inovação e
-            evolução. Com uma equipe talentosa, estamos prontos para liderar o
-            caminho e criar um mundo mais conectado e inteligente.
+            Olhando para o futuro, a GoiStore está empenhada em se tornar um ponto de referência no mercado de venda de celulares.
           </p>
           <div className="flex gap-4 flex-wrap justify-center">
             <Link

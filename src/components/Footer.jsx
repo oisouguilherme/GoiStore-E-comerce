@@ -18,14 +18,14 @@ export function Footer() {
         <div>
           <h2>Redes sociais:</h2>
           <div className="flex gap-4 pt-2">
-            <a href="#">
+            <a href="https://www.instagram.com/goistore_buritismg/" target="_blank">
               <IconInstagram />
             </a>
             <a href="#">
               <IconFacebook />
             </a>
-            <a href="#">
-              <IconTwitter />
+            <a href="https://wa.me/5538998078611?text=Seja+bem+vindo+a+GoiStore%21+Digite+aqui+o+seu+Produto+de+Interesse%3A++" target="_blank">
+              <IconWhatsApp />
             </a>
             <a href="#">
               <IconTikTok />
