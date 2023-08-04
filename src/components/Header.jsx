@@ -72,9 +72,9 @@ export default function Header() {
               </LinkScrol>
             </li>
             <li className="cursor-pointer duration-300">
-              <LinkScrol smooth={true} to="nossosprodutos">
-                Nossos Produtos
-              </LinkScrol>
+                <LinkScrol smooth={true} to="nossosprodutos">
+                  Nossos Produtos
+                </LinkScrol>
             </li>
           </ul>
         </div>
