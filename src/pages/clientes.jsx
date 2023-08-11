@@ -14,7 +14,7 @@ export default function clientes() {
     <div>
       <Header />
       <TitlePrincipal title={"Depoimentos de Clientes Satisfeitos"} />
-      <p className="max-w-2xl mx-auto text-center italic">
+      <p className="max-w-2xl mx-auto text-center italic px-2 text-sm sm:text-base">
         "Junte-se à nossa família de clientes satisfeitos e descubra uma
         experiência única em telecomunicações. Na{" "}
         <span className="text-orange-500 font-bold text-lg">GoiStore</span>, não
