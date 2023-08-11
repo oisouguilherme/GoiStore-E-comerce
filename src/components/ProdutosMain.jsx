@@ -1,7 +1,7 @@
 import { CardProduto } from "./CardProduto";
 import ImageIphone from "../assets/tel.jpg";
 
-export function ProdutosMain() {
+export function ProdutosMain({child}) {
   return (
     <section id="nossosprodutos">
       <div className="px-8">
@@ -12,6 +12,38 @@ export function ProdutosMain() {
             </h2>
           </div>
           <div className="flex gap-10 flex-wrap justify-center">
+            <CardProduto
+              desconto={"33%"}
+              imagem={ImageIphone}
+              celular={"Apple iPhone 14 128GB Roxo"}
+              precoAtual={"5.099"}
+              precoTotal={"7.599"}
+              precoDividido={"516,74"}
+            />
+            <CardProduto
+              desconto={"33%"}
+              imagem={ImageIphone}
+              celular={"Apple iPhone 14 128GB Roxo"}
+              precoAtual={"5.099"}
+              precoTotal={"7.599"}
+              precoDividido={"516,74"}
+            />
+            <CardProduto
+              desconto={"33%"}
+              imagem={ImageIphone}
+              celular={"Apple iPhone 14 128GB Roxo"}
+              precoAtual={"5.099"}
+              precoTotal={"7.599"}
+              precoDividido={"516,74"}
+            />
+            <CardProduto
+              desconto={"33%"}
+              imagem={ImageIphone}
+              celular={"Apple iPhone 14 128GB Roxo"}
+              precoAtual={"5.099"}
+              precoTotal={"7.599"}
+              precoDividido={"516,74"}
+            />
             <CardProduto
               desconto={"33%"}
               imagem={ImageIphone}

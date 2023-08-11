@@ -43,7 +43,6 @@ export default function Home() {
         cor={"Roxo"}
       />
       <MaisVendidos />
-      <ProdutosMain />
       <Beneficios />
       <ButtonWhatsApp />
       <Footer />

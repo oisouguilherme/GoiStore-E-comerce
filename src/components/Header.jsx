@@ -1,11 +1,10 @@
 import Image from "next/image";
-import Logo from '../assets/logo.png'
+import Logo from "../assets/logo.png";
 
 import { useState } from "react";
 
 import Link from "next/link";
 import { Link as LinkScrol } from "react-scroll";
-
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,9 +14,9 @@ export default function Header() {
   };
 
   return (
-    <section id="Nav" className="z-50 py-2 px-4">
+    <section id="Nav" className="z-50 py-4 px-4 border-b">
       <div className="max-w-6xl mx-auto flex justify-between items-center">
-        <div className="cursor-pointer w-44">
+        <div className="cursor-pointer w-36">
           <Link href="/">
             <Image src={Logo} alt="Logo Goistore" />
           </Link>
@@ -42,39 +41,27 @@ export default function Header() {
                 <Link href="/sobre">Sobre Nós</Link>
               </li>
               <li className="cursor-pointer text-white duration-300">
-                <LinkScrol onClick={toggleMenu} smooth={true} to="maisvendidos">
-                  Mais Vendidos
-                </LinkScrol>
+                <Link href="/clientes">Nossos Clientes</Link>
               </li>
               <li className="cursor-pointer text-white duration-300">
-                <LinkScrol
-                  onClick={toggleMenu}
-                  smooth={true}
-                  to="nossosprodutos"
-                >
-                  Nossos Produtos
-                </LinkScrol>
+                <Link href="/produtos">Nossos Produtos</Link>
               </li>
             </ul>
           </div>
         </div>
         <div className="hidden lg:block">
           <ul className="flex space-x-12 font-medium text-center items-center text-lg">
-            <li className="cursor-pointer duration-300">
+            <li className="cursor-pointer hover:text-orange-500 duration-300">
               <Link href="/">Página Inicial</Link>
             </li>
-            <li className="cursor-pointer duration-300">
+            <li className="cursor-pointer hover:text-orange-500 duration-300">
               <Link href="/sobre">Sobre Nós</Link>
             </li>
-            <li className="cursor-pointer duration-300">
-              <LinkScrol smooth={true} to="maisvendidos">
-                Mais Vendidos
-              </LinkScrol>
+            <li className="cursor-pointer hover:text-orange-500 duration-300">
+              <Link href="/clientes">Nossos Clientes</Link>
             </li>
-            <li className="cursor-pointer duration-300">
-                <LinkScrol smooth={true} to="nossosprodutos">
-                  Nossos Produtos
-                </LinkScrol>
+            <li className="cursor-pointer hover:text-orange-500 duration-300">
+              <Link href="/produtos">Nossos Produtos</Link>
             </li>
           </ul>
         </div>
