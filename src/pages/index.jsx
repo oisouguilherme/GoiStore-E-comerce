@@ -27,7 +27,11 @@ export default function Home() {
             Transforme seu mundo com a inovação dos iPhones <br />{" "}
             <span className="text-white">A revolução na palma da sua mão!</span>
           </h2>
-          <a href="https://wa.me/5538998078611?text=Seja+bem+vindo+a+GoiStore%21+Digite+aqui+o+seu+Produto+de+Interesse%3A++" target="_blank" className="flex gap-2 items-center justify-center bg-[#ee6c09] px-20 py-3 text-white font-medium uppercase rounded-lg hover:scale-105 duration-300">
+          <a
+            href="https://wa.me/5538998078611?text=Seja+bem+vindo+a+GoiStore%21+Digite+aqui+o+seu+Produto+de+Interesse%3A++"
+            target="_blank"
+            className="flex gap-2 items-center justify-center bg-[#ee6c09] px-20 py-3 text-white font-medium uppercase rounded-lg hover:scale-105 duration-300"
+          >
             <IconWhatsApp /> WhatsApp
           </a>
         </div>
