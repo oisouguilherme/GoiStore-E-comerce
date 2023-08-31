@@ -12,20 +12,19 @@ import IPhone13R from "../assets/celulares/iphones/13 ROSE.webp";
 import IPhone13 from "../assets/celulares/iphones/13.webp";
 import IPhone14PRO from "../assets/celulares/iphones/14 PRO.webp";
 import IPhone14PRO2 from "../assets/celulares/iphones/14 PRO2.webp";
-import IPhone12 from "../assets/celulares/iphones/14.webp";
 import IPhoneXRED from "../assets/celulares/iphones/XR RED.webp";
 import IPhoneXRW from "../assets/celulares/iphones/XR WHITE.webp";
 import IPhoneXR from "../assets/celulares/iphones/XR.webp";
 
-import Xiaomi12L from "../assets/celulares/xiaomi/12 lite.webp";
-import Xiaomi13L from "../assets/celulares/xiaomi/13 lite.webp";
-import XiaomiNote12 from "../assets/celulares/xiaomi/note12 branco.jpg";
-import XiaomiNote12P from "../assets/celulares/xiaomi/note12 pro preto.webp";
-import XiaomiNote12Pro from "../assets/celulares/xiaomi/note12 pro.jpg";
+import Xiaomi12L from "../assets/celulares/xiaomi/12lite.webp";
+import Xiaomi13L from "../assets/celulares/xiaomi/13lite.webp";
+import XiaomiNote12 from "../assets/celulares/xiaomi/note12branco.jpg";
+import XiaomiNote12P from "../assets/celulares/xiaomi/note12propreto.webp";
+import XiaomiNote12Pro from "../assets/celulares/xiaomi/note12pro.jpg";
 import XiaomiNote122 from "../assets/celulares/xiaomi/note12.jpg";
 import XiaomiNote12s from "../assets/celulares/xiaomi/note12s.webp";
-import XiaomiPocoX5 from "../assets/celulares/xiaomi/poco X5 Pro.webp";
-import XiaomiPad from "../assets/celulares/xiaomi/Redmi Pad.jpg";
+import XiaomiPocoX5 from "../assets/celulares/xiaomi/pocoX5Pro.webp";
+import XiaomiPad from "../assets/celulares/xiaomi/RedmiPad.jpg";
 
 export function ProdutosMain() {
   return (
