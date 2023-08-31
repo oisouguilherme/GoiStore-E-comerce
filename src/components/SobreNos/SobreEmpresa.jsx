@@ -1,5 +1,5 @@
 import Image from "next/image";
-import ImageEmpresa from "../../assets/sabreEmpresa.png";
+import ImageEmpresa from "../../assets/italo.png";
 import Link from "next/link";
 import Head from "next/head";
 export function SobreEmpresa() {
@@ -38,7 +38,14 @@ export function SobreEmpresa() {
             </a>
           </div>
         </div>
-        <Image src={ImageEmpresa} alt="Imagem da Loja" />
+        <div className="flex justify-center">
+          <Image
+            src={ImageEmpresa}
+            alt="Imagem da Loja"
+            className="w-full object-contain"
+            height={600}
+          />
+        </div>
       </div>
     </div>
   );

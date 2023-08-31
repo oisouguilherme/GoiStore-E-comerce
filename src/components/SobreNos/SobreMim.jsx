@@ -1,14 +1,16 @@
 import Image from "next/image";
-import ImageSobreMim from '../../assets/sobremim.png'
+import ImageSobreMim from '../../assets/italo2.png'
+
 export function SobreMim() {
   return (
     <div>
-      <div className="max-w-6xl mx-auto grid md:grid-cols-2 items-center gap-8 py-12 px-2">
+      <div className="max-w-6xl mx-auto grid md:grid-cols-2 items-end gap-8 py-12 px-2">
         <div className="flex justify-center">
           <Image
             src={ImageSobreMim}
             alt="Imagem da Loja"
             className="w-96"
+            height={800}
           />
         </div>
         <div className="sm:text-lg space-y-4">
