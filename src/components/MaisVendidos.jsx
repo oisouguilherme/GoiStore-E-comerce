@@ -1,6 +1,11 @@
 import { CardProduto } from "./CardProduto";
-import ImageIphone from "../assets/tel.jpg";
-import { Link } from "react-scroll";
+import ImageCell11black from '../assets/celulares/iphones/11 B.webp'
+import ImageCell11white from '../assets/celulares/iphones/11 W.webp'
+import ImageCell14 from '../assets/celulares/iphones/14.webp'
+import ImageCell14Pro from '../assets/celulares/iphones/14 PRO.webp'
+import ImageCellXR from '../assets/celulares/iphones/XR.webp'
+import ImageCellXRbranco from '../assets/celulares/iphones/XR WHITE.webp'
+
 
 export function MaisVendidos() {
   return (
@@ -22,30 +27,31 @@ export function MaisVendidos() {
           fale conosco
         </a>
       </div>
-      <div className="flex flex-wrap p-4 justify-center gap-4 w-full">
+      <div data-aos="fade-up"
+      data-aos-delay="300" className="flex flex-wrap p-4 justify-center gap-4 w-full">
+      <CardProduto
+            imagem={ImageCell11black}
+            celular={"Apple iPhone 11 64GB"}
+            precoAtual={"3.150,00"}
+            precoTotal={"3.599,99"}
+            cor={"Preto"}
+            informacao={"1 ano de garantia Apple"}
+            />
         <CardProduto
-          desconto={"33%"}
-          imagem={ImageIphone}
-          celular={"Apple iPhone 14 128GB Roxo"}
-          precoAtual={"5.099"}
-          precoTotal={"7.599"}
-          precoDividido={"516,74"}
+          imagem={ImageCell14}
+          celular={"Apple iPhone 14 128GB"}
+          precoAtual={"4.699,99"}
+          precoTotal={"5.199"}
+          cor={"Preto Fosco"}
+            informacao={"1 ano de garantia Apple"}
         />
         <CardProduto
-          desconto={"33%"}
-          imagem={ImageIphone}
-          celular={"Apple iPhone 14 128GB Roxo"}
-          precoAtual={"5.099"}
-          precoTotal={"7.599"}
-          precoDividido={"516,74"}
-        />
-        <CardProduto
-          desconto={"33%"}
-          imagem={ImageIphone}
-          celular={"Apple iPhone 14 128GB Roxo"}
-          precoAtual={"5.099"}
-          precoTotal={"7.599"}
-          precoDividido={"516,74"}
+          imagem={ImageCellXR}
+          celular={"Apple iPhone XR 64GB"}
+          precoAtual={"2.199,99"}
+          precoTotal={"2.599"}
+          cor={"Preto"}
+          informacao={"1 ano de garantia Apple"}
         />
       </div>
     </section>

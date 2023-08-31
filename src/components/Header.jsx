@@ -4,7 +4,6 @@ import Logo from "../assets/logo.png";
 import { useState } from "react";
 
 import Link from "next/link";
-import { Link as LinkScrol } from "react-scroll";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -38,13 +37,13 @@ export default function Header() {
                 <Link href="/">Página Inicial</Link>
               </li>
               <li className="cursor-pointer text-white duration-300">
+                <Link href="/produtos">Nossos Produtos</Link>
+              </li>
+              <li className="cursor-pointer text-white duration-300">
                 <Link href="/sobre">Sobre Nós</Link>
               </li>
               <li className="cursor-pointer text-white duration-300">
                 <Link href="/clientes">Nossos Clientes</Link>
-              </li>
-              <li className="cursor-pointer text-white duration-300">
-                <Link href="/produtos">Nossos Produtos</Link>
               </li>
             </ul>
           </div>
@@ -58,10 +57,10 @@ export default function Header() {
               <Link href="/sobre">Sobre Nós</Link>
             </li>
             <li className="cursor-pointer hover:text-orange-500 duration-300">
-              <Link href="/clientes">Nossos Clientes</Link>
+              <Link href="/produtos">Nossos Produtos</Link>
             </li>
             <li className="cursor-pointer hover:text-orange-500 duration-300">
-              <Link href="/produtos">Nossos Produtos</Link>
+              <Link href="/clientes">Nossos Clientes</Link>
             </li>
           </ul>
         </div>

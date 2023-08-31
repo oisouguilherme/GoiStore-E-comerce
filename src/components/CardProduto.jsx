@@ -1,9 +1,17 @@
-import { IconStar } from "@/assets/Icons";
 import Image from "next/image";
 import { useState } from "react";
 import { CompreAqui } from "./CompreAqui";
 
-export function CardProduto({desconto, celular, precoAtual, precoTotal, precoDividido, imagem}) {
+export function CardProduto({
+  desconto,
+  celular,
+  precoAtual,
+  precoTotal,
+  precoDividido,
+  imagem,
+  cor,
+  informacao,
+}) {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const openModal = () => {
@@ -15,34 +23,22 @@ export function CardProduto({desconto, celular, precoAtual, precoTotal, precoDiv
   };
 
   return (
-    <div>
+    <div data-aos="fade-down" data-aos-delay="200">
       <div
         onClick={openModal}
         className="w-64 p-4 bg-gray-50 shadow-xl cursor-pointer"
       >
-        <div className="relative">
+        <div className="relative h-64 overflow">
           <p className="absolute bg-gray-500 px-2 text-white font-medium text-sm rounded-full top-2 left-2">
             {desconto}
           </p>
-          <Image src={imagem} alt={celular} />
+          <Image src={imagem} alt={celular} className="object-contain h-full" />
         </div>
         <p className="pb-4 pt-2">{celular}</p>
-        <div className="flex gap-2 items-center">
-          <p className="text-lg font-bold">{precoAtual}</p>
-          <p className="text-sm text-red-500 font-bold line-through	">
-            {precoTotal}
-          </p>
-        </div>
-        <p className="text-sm">
-          <strong>12x</strong> de <strong>R$ {precoDividido} sem juros</strong>
-        </p>
-        <div className="text-yellow-200 flex items-center">
-          <IconStar />
-          <IconStar />
-          <IconStar />
-          <IconStar />
-          <IconStar />
-          <p className="text-gray-300 px-2">(5.0)</p>
+        <div className="flex flex-col">
+          <p className="text-sm text-zinc-500 line-through">R$ {precoTotal}</p>
+          <p className="text-2xl font-bold text-orange-500">R$ {precoAtual}</p>
+          <p className="text-sm text-zinc-500">À vista no PIX</p>
         </div>
       </div>
       {isModalOpen && (
@@ -59,10 +55,16 @@ export function CardProduto({desconto, celular, precoAtual, precoTotal, precoDiv
               precoTotal={precoTotal}
               precoDividido={precoDividido}
               desconto={desconto}
-              cor={"Roxo"}
+              cor={cor}
+              informacao={informacao}
               hidden={"hidden sm:block"}
             />
-            <p onClick={closeModal} className="absolute top-3 right-6 text-xl font-medium cursor-pointer">X</p>
+            <p
+              onClick={closeModal}
+              className="absolute top-3 right-6 text-xl font-medium cursor-pointer"
+            >
+              X
+            </p>
           </div>
         </div>
       )}

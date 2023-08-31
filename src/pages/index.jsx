@@ -7,10 +7,16 @@ import { Footer } from "@/components/Footer";
 import { Beneficios } from "@/components/Beneficios";
 import { CompreAqui } from "@/components/CompreAqui";
 import { ButtonWhatsApp } from "@/components/ButtonWhatsApp";
-import ImagePhone from "../assets/tel.jpg";
 import Head from "next/head";
+import ImageCell14Pro from "../assets/celulares/iphones/14 PRO.webp";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 export default function Home() {
+  useEffect(() => {
+    AOS.init(); // Inicialize o AOS
+  }, []);
   return (
     <>
       <Head>
@@ -19,18 +25,23 @@ export default function Home() {
       <Header />
       <Banner />
       <OfertasSemana />
-        <div className="h-fit flex flex-col gap-8 justify-center items-center">
-          <video src="/video.mp4" autoPlay={true} muted loop className=" h-[450px] max-w-6xl w-full object-cover object-top rounded-lg">aa</video>
-        </div>
+      <div className="h-fit flex flex-col gap-8 justify-center items-center">
+        <video
+          src="/video.mp4"
+          autoPlay={true}
+          muted
+          loop
+          className=" h-[450px] max-w-6xl w-full object-cover object-right sm:object-top rounded-lg "
+        ></video>
+      </div>
       <Category />
       <CompreAqui
-        celular={"Apple iPhone 14 128GB Roxo"}
-        imagem={ImagePhone}
-        precoAtual={"5.099"}
+        celular={"Apple iPhone 14 P/MAX 128GB"}
+        imagem={ImageCell14Pro}
+        precoAtual={"6.299,99"}
         precoTotal={"7.599"}
-        precoDividido={"516,74"}
-        desconto={"33%"}
-        cor={"Roxo"}
+        informacao={"1 Ano de Garantia Apple"}
+        cor={"Prateado"}
       />
       <MaisVendidos />
       <Beneficios />

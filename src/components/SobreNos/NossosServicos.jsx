@@ -16,7 +16,11 @@ export function NossosServicos() {
           Produtos que Conectam
         </p>
         <div className="flex flex-wrap justify-center gap-12 pt-12">
-          <div className="w-80 flex flex-col items-center space-y-2">
+          <div
+            className="w-80 flex flex-col items-center space-y-2"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
             <div className="bg-gray-100 p-6 rounded-full">
               <IconPhone />
             </div>
@@ -26,7 +30,11 @@ export function NossosServicos() {
               para oferecer o máximo em desempenho e funcionalidade.
             </p>
           </div>
-          <div className="w-80 flex flex-col items-center space-y-2">
+          <div
+            className="w-80 flex flex-col items-center space-y-2"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
             <div className="bg-gray-100 p-6 rounded-full">
               <IconAcessorios />
             </div>
@@ -36,7 +44,11 @@ export function NossosServicos() {
               capas elegantes a fones de ouvido de alta qualidade.
             </p>
           </div>
-          <div className="w-80 flex flex-col items-center space-y-2">
+          <div
+            className="w-80 flex flex-col items-center space-y-2"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
             <div className="bg-gray-100 p-6 rounded-full">
               <IconTools />
             </div>

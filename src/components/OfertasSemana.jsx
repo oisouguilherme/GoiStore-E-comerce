@@ -1,6 +1,9 @@
 import { CardProduto } from "./CardProduto";
-import ImageIphone from "../assets/tel.jpg";
-import { Link } from "react-scroll";
+import ImageCell11white from "../assets/celulares/iphones/11 W.webp";
+import ImageCellXRbranco from "../assets/celulares/iphones/XR WHITE.webp";
+import ImageCellXiaomi12 from "../assets/celulares/xiaomi/note12.jpg";
+import ImageCellXiaomi12s from "../assets/celulares/xiaomi/note12s.webp";
+
 export function OfertasSemana() {
   return (
     <div className="px-8">
@@ -10,38 +13,42 @@ export function OfertasSemana() {
             Ofertas da Semana
           </h2>
         </div>
-        <div className="flex gap-10 flex-wrap justify-center">
+        <div
+          data-aos="fade-up"
+          data-aos-delay="100"
+          className="flex gap-10 flex-wrap justify-center"
+        >
           <CardProduto
-            desconto={"33%"}
-            imagem={ImageIphone}
-            celular={"Apple iPhone 14 128GB Roxo"}
-            precoAtual={"5.099"}
-            precoTotal={"7.599"}
-            precoDividido={"516,74"}
+            imagem={ImageCellXRbranco}
+            celular={"Apple IPhone XR 64GB"}
+            precoAtual={"1.749,99"}
+            precoTotal={"1.899,99"}
+            cor={"Branco"}
+            informacao={"SEMINOVO"}
           />
           <CardProduto
-            desconto={"33%"}
-            imagem={ImageIphone}
-            celular={"Apple iPhone 14 128GB Roxo"}
-            precoAtual={"5.099"}
-            precoTotal={"7.599"}
-            precoDividido={"516,74"}
+            imagem={ImageCellXiaomi12}
+            celular={"Redmi Note 12 128GB"}
+            precoAtual={"1.249,99"}
+            precoTotal={"1.300,00"}
+            informacao={"4GB de Mémoria RAM"}
+            cor={"Preto"}
           />
           <CardProduto
-            desconto={"33%"}
-            imagem={ImageIphone}
-            celular={"Apple iPhone 14 128GB Roxo"}
-            precoAtual={"5.099"}
-            precoTotal={"7.599"}
-            precoDividido={"516,74"}
+            imagem={ImageCell11white}
+            celular={"Apple iPhone 11 64GB"}
+            precoAtual={"2.499,99"}
+            precoTotal={"2.699,99"}
+            informacao={"SEMINOVO"}
+            cor={"Branco"}
           />
           <CardProduto
-            desconto={"33%"}
-            imagem={ImageIphone}
-            celular={"Apple iPhone 14 128GB Roxo"}
-            precoAtual={"5.099"}
-            precoTotal={"7.599"}
-            precoDividido={"516,74"}
+            imagem={ImageCellXiaomi12s}
+            celular={"Redmi Note 12s 256GB"}
+            precoAtual={"1.599,99"}
+            precoTotal={"1.899"}
+            informacao={"8GB de Mémoria RAM"}
+            cor={"Preto"}
           />
         </div>
       </div>
