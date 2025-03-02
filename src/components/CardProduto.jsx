@@ -25,7 +25,7 @@ export function CardProduto({
   return (
     <div data-aos="fade-down" data-aos-delay="200">
       <div
-        onClick={openModal}
+        /* onClick={openModal} */
         className="w-64 p-4 bg-gray-50 shadow-xl cursor-pointer"
       >
         <div className="relative h-64 overflow">

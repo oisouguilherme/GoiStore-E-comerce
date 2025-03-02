@@ -27,12 +27,12 @@ export function IconWhatsApp() {
     </svg>
   );
 }
-export function IconInstagram() {
+export function IconInstagram({ size = 24 }) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
+      width={size}
+      height={size}
       fill="currentColor"
       class="bi bi-instagram"
       viewBox="0 0 16 16"

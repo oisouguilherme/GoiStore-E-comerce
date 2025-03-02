@@ -34,11 +34,11 @@ export default function Header() {
           >
             <ul className="p-8 space-y-4 text-2xl">
               <li className="cursor-pointer text-white duration-300">
-                <Link href="/">Página Inicial</Link>
+                <Link href="/bio">Nossa Bio</Link>
               </li>
-              <li className="cursor-pointer text-white duration-300">
+              {/* <li className="cursor-pointer text-white duration-300">
                 <Link href="/produtos">Nossos Produtos</Link>
-              </li>
+              </li> */}
               <li className="cursor-pointer text-white duration-300">
                 <Link href="/sobre">Sobre Nós</Link>
               </li>
@@ -51,14 +51,14 @@ export default function Header() {
         <div className="hidden lg:block">
           <ul className="flex space-x-12 font-medium text-center items-center text-lg">
             <li className="cursor-pointer hover:text-orange-500 duration-300">
-              <Link href="/">Página Inicial</Link>
+              <Link href="/bio">Nossa Bio</Link>
             </li>
             <li className="cursor-pointer hover:text-orange-500 duration-300">
               <Link href="/sobre">Sobre Nós</Link>
             </li>
-            <li className="cursor-pointer hover:text-orange-500 duration-300">
+            {/*  <li className="cursor-pointer hover:text-orange-500 duration-300">
               <Link href="/produtos">Nossos Produtos</Link>
-            </li>
+            </li> */}
             <li className="cursor-pointer hover:text-orange-500 duration-300">
               <Link href="/clientes">Nossos Clientes</Link>
             </li>

@@ -12,7 +12,7 @@ export function SobreEmpresa() {
         <div
           className="sm:text-lg space-y-4 text-center"
           data-aos="fade-right"
-          data-aos-delay="400"
+          data-aos-delay="200"
         >
           <h2 className="text-2xl sm:text-4xl font-bold">
             Conheça a Nossa História
@@ -50,8 +50,8 @@ export function SobreEmpresa() {
         </div>
         <div
           className="flex justify-center"
-          data-aos="fade-left"
-          data-aos-delay="400"
+          data-aos="fade-up"
+          data-aos-delay="200"
         >
           <Image
             src={ImageEmpresa}
