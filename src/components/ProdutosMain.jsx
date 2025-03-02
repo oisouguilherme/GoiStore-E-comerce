@@ -222,14 +222,14 @@ export function ProdutosMain() {
               cor={"Preto"}
               informacao={"8GB de Mémoria RAM"}
             />
-            <CardProduto
+            {/*  <CardProduto
               imagem={XiaomiPocoX5}
               celular={"POCO X5 PRO 256GB"}
               precoAtual={"2.399,99"}
               precoTotal={"2.599"}
               cor={"Azul"}
               informacao={"8GB de Mémoria RAM"}
-            />
+            /> */}
             <CardProduto
               imagem={XiaomiPad}
               celular={"REDMI PAD 128GB"}
